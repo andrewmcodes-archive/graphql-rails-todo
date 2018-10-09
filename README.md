@@ -1,24 +1,4 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Following [this](https://www.codementor.io/karanjaeddy/build-a-to-do-list-api-with-graphql-api-rails-5-part-1-irjt1e7jm#comments-irjt1e7jm)
+tutorial using Rspec, QraphQL, and Rails.
