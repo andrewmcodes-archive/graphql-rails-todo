@@ -1,5 +1,6 @@
 require "database_cleaner"
 require "spec_helper"
+require "graphql"
 
 ENV["RAILS_ENV"] ||= "test"
 require File.expand_path("../config/environment", __dir__)

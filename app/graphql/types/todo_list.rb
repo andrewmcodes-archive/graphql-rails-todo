@@ -1,0 +1,7 @@
+Types::TodoList = GraphQL::ObjectType.define do
+  name "TodoListType"
+  description "The Todo List type"
+
+  field :id, !types.ID
+  field :title, !types.String
+end
