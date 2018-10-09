@@ -3,7 +3,7 @@ module QueryTypes
     name "TodoListQueryType"
     description "The todo list query type"
 
-    field :todo_lists, types[Types::TodoList], "returns all todo lists" do
+    field :todo_lists, types[Types::TodoListType], "returns all todo lists" do
       resolve ->(_obj, _args, _ctx) { TodoList.all }
     end
   end

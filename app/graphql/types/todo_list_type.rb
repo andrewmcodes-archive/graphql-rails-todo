@@ -1,4 +1,4 @@
-Types::TodoList = GraphQL::ObjectType.define do
+Types::TodoListType = GraphQL::ObjectType.define do
   name "TodoListType"
   description "The Todo List type"
 

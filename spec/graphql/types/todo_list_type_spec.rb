@@ -1,6 +1,6 @@
 # spec/graphql/types/todo_list_type_spec.rb
 
-Rspec.describe Types::TodoList do
+Rspec.describe Types::TodoListType do
   # avail type definer in our tests
   types = GraphQL::Define::TypeDefiner.instance
 

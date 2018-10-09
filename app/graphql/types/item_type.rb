@@ -1,4 +1,4 @@
-Types::Item = GraphQL::ObjectType.define do
+Types::ItemType = GraphQL::ObjectType.define do
   name "ItemType"
   description "Type definition for items"
 

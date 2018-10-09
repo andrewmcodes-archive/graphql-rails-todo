@@ -1,4 +1,4 @@
-Rspec.describe Types::Item do
+Rspec.describe Types::ItemType do
   # avail type definer in our tests
   types = GraphQL::Define::TypeDefiner.instance
 
