@@ -1,11 +1,11 @@
-require 'database_cleaner'
-require 'spec_helper'
+require "database_cleaner"
+require "spec_helper"
 
-ENV['RAILS_ENV'] ||= 'test'
-require File.expand_path('../../config/environment', __FILE__)
+ENV["RAILS_ENV"] ||= "test"
+require File.expand_path("../config/environment", __dir__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
-require 'rspec/rails'
+require "rspec/rails"
 
 begin
   ActiveRecord::Migration.maintain_test_schema!
@@ -17,9 +17,9 @@ end
 # configure shoulda matchers
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
-   with.test_framework :rspec
-   with.library :rails
- end
+    with.test_framework :rspec
+    with.library :rails
+  end
 end
 
 RSpec.configure do |config|
@@ -32,7 +32,7 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
   end
 
-  config.around(:each) do |example|
+  config.around do |example|
     DatabaseCleaner.cleaning do
       example.run
     end
